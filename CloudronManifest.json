@@ -1,0 +1,34 @@
+{
+  "title": "Coder",
+  "id": "net.c0decafe.cloudron.coder",
+  "author": "c0decafe <github@c0decafe.net>",
+  "tagline": "Your Self-Hosted Remote Development Platform.",
+  "description": "Coder enables organizations to build their own development platform.",
+  "version": "1.0.0",
+  "upstreamVersion": "0.24.1",
+  "website": "https://coder.com",
+  "healthCheckPath": "/",
+  "httpPort": 8000,
+  "memoryLimit": 1000000000,
+  "addons": {
+    "localstorage": {},
+    "postgresql": {},
+    "docker": {},
+    "oidc": {
+      "loginRedirectUri": "/api/v2/users/oidc/callback"
+    }
+  },
+  "icon": "file://icon.png",
+  "tags": [
+    "development",
+    "git",
+    "collaboration",
+    "code",
+    "vscode",
+    "ide"
+  ],
+  "mediaLinks": [
+    "https://raw.githubusercontent.com/coder/coder/blob/main/docs/images/hero-image.png"
+  ],
+  "manifestVersion": 2
+}
